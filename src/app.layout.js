@@ -15,8 +15,6 @@ const AppLayout = () => {
         <div className="appContainer__app">
         <Switch>
           <Route path="/" exact component={SearchComponent} />
-          {/* <SearchComponent /> */}
-          {/* <Favorites /> */}
           <Route path="/favorites"  component={Favorites}/>
           </Switch>
         </div>

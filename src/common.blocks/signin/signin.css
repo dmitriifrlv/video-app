@@ -60,7 +60,7 @@
   
 }
 
-.formContainer__form__button, .formContainer__form__button: :active, .formContainer__form__button:focus {
+.formContainer__form__button, .formContainer__form__button:active, .formContainer__form__button:focus {
   outline:none
 }
 

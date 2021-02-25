@@ -1,0 +1,14 @@
+.input-group {
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
+.input-group__input {
+  width: 85%;
+  height: 2.5rem;
+}
+
+.input-group__button {
+  width: 15%;
+  height: 2.5rem;
+}

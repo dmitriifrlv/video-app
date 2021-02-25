@@ -1,0 +1,13 @@
+.videoCard {
+  border: 1px solid red;
+  width: 30%;
+  margin: .5rem;
+}
+
+.videoCard__img {
+  width: 100%;
+}
+
+.videoCard__text {
+  
+}

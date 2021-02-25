@@ -9,39 +9,45 @@ const SignIn = (props) => {
 
   const onLoginChange = (event) => {
     setLogin(event.target.value)
-    
-}
-const onPasswordChange = (event) => {
-  setPassword(event.target.value)
-}
-const onSubmitEvent = async (e)=>{
-  e.preventDefault()
-  const response = await axios.post("https://salty-atoll-46513.herokuapp.com/signin", {
-    login:login,
-    password:password
-  })
-  console.log(response.data.token)
-  if (response.data.status === "success") {
-    auth.login(()=>{
-      props.history.push('/')
-    })
-    localStorage.setItem("authToken", response.data.token)
   }
+
+  const onPasswordChange = (event) => {
+    setPassword(event.target.value)
+  }
+
+  const onSubmitEvent = async (e)=>{
+    e.preventDefault()
+    const response = await axios.post("https://salty-atoll-46513.herokuapp.com/signin", {
+      login:login,
+      password:password
+    })
+    console.log(response.data.token)
+    if (response.data.status === "success") {
+      auth.login(()=>{
+        props.history.push('/')
+      })
+      localStorage.setItem("authToken", response.data.token)
+    }
   }
   return (
     <div className="formContainer">
       <form onSubmit={onSubmitEvent} className="formContainer__form">
       <h1 className="formContainer__form__title">Вход</h1>
-      <label htmlFor="login">Логин</label>
-      <input 
-      className="formContainer__form__input"
-      onChange={onLoginChange}
-      type="text"/>
-      <label htmlFor="password">Пароль</label>
+      <div className="formContainer__form__input-form">
+        <label htmlFor="login" className="formContainer__form__label">Логин</label>
+        <input 
+        className="formContainer__form__input"
+        onChange={onLoginChange}
+        type="text"/>
+      </div>
+      <div className="formContainer__form__input-form">
+      <label htmlFor="password" className="formContainer__form__label">Пароль</label>
       <input 
       className="formContainer__form__input"
       onChange={onPasswordChange}
       type="password"/>
+      </div >
+      
       <button className="formContainer__form__button" type="submit"> <span>Войти</span> </button>
     </form>
     </div>
@@ -50,20 +56,4 @@ const onSubmitEvent = async (e)=>{
 };
 
 export default SignIn;
-
-{/* <form onSubmit={(e)=>{
-      e.preventDefault()
-      console.log(login, password)
-      fetch('http://localhost:3000/signin', {
-        method: 'post',
-        headers: {'Content-type': 'application/json'},
-        body: JSON.stringify({
-          login:login,
-          password:password
-        })
-      })
-      auth.login(()=>{
-      props.history.push('/')
-    })}}> */}
-
    

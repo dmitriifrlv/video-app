@@ -13,7 +13,7 @@
 }
 
 .appContainer__app{
- 
+  /* border: 1px solid red; */
   height: 100%;
   width: 75%;
   margin: auto;

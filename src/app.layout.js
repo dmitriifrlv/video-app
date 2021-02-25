@@ -3,7 +3,6 @@ import Header from './common.blocks/header/Header'
 import { Switch, Route } from 'react-router-dom'
 import Favorites from './favorites';
 import SearchComponent from './common.blocks/searchComponent/SearchComponent';
-import { withRouter } from "react-router";
 import './App.css';
 
 

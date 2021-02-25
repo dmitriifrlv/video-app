@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom'
 import Favorites from './favorites';
 import SearchComponent from './common.blocks/searchComponent/SearchComponent';
 import './App.css';
-import SaveVideoCard from './common.blocks/saveVideoCard/saveVideoCard'
 
 const AppLayout = () => {
   return (

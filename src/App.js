@@ -1,8 +1,7 @@
 import './App.css';
 import React from 'react';
 import AppLayout from './app.layout'
-import Header from './common.blocks/header/Header'
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import { Switch, Route} from 'react-router-dom'
 import SignIn from './common.blocks/signin/SignIn';
 import ProtectedRoute from './protected.route'
 import SaveVideoCard from './common.blocks/saveVideoCard/saveVideoCard'

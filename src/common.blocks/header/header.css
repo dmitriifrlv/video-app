@@ -1,11 +1,8 @@
 .header {
-  /* border: 1px solid green; */
   display: flex;
   width: 100%;
   margin: auto;
   min-height: 10vh;
-  /* position: fixed; */
-  /* height: 7%; */
   align-items: center;
   color: #1390e5;
   border-bottom: 1px solid rgba(229, 229, 229, 1);
@@ -15,8 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid green; */
-  height: 100%;
   min-height: 10vh;
   width: 75%;
   margin: auto;
@@ -26,17 +21,25 @@
   display: flex;
   align-items: center;
   list-style: none;
+  height: 10vh;
+  
 }
 
 .header__nav__ul__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 1rem;
-  color: black;
+  color: #1390e5;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
+  height: 100%;
 }
 .header__nav__ul__item:hover {
-  color: #1390e5;
- 
+
+  border-bottom: 3px solid #1390e5;
+
 }
 .header__nav__ul__item__logo{
   max-height: 7vh;

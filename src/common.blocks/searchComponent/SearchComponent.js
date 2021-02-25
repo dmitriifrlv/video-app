@@ -55,7 +55,7 @@ class SearchComponent extends Component {
             />
           </div>
         <div className="searchComponent__videoBlock">
-          <VideoList videos={this.state.videos}/>
+          <VideoList videos={this.state.videos} />
         </div>
         </div>
       );

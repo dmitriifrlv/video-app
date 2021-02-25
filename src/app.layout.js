@@ -4,17 +4,20 @@ import { Switch, Route } from 'react-router-dom'
 import Favorites from './favorites';
 import SearchComponent from './common.blocks/searchComponent/SearchComponent';
 import './App.css';
-
+import SaveVideoCard from './common.blocks/saveVideoCard/saveVideoCard'
 
 const AppLayout = () => {
   return (
     <div>
+      
       <Header/>
+      
       <div className="appContainer">
         <div className="appContainer__app">
         <Switch>
           <Route path="/" exact component={SearchComponent} />
           <Route path="/favorites"  component={Favorites}/>
+          
           </Switch>
         </div>
           

@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function Favorites() {
     return (
       <div>
-        <p> my favorite videos</p>
+        <p>Избранное</p>
       </div>
       );
   }

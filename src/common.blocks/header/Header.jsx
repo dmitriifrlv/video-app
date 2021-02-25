@@ -11,7 +11,7 @@ function Header(props) {
       <ul className="header__nav__ul">
         <li className="header__nav__ul__item"><img className="header__nav__ul__item__logo" src={logo} alt=""/></li>
         <Link to='/' className="header__nav__ul__item"><li>Поиск</li></Link>
-        <Link to='/favorites' className="header__nav__ul__item"><li className="header__nav__ul__item">Избранное</li></Link>
+        <Link to='/favorites' className="header__nav__ul__item"><li>Избранное</li></Link>
       </ul>
       <ul className="header__nav__ul">
         <li 

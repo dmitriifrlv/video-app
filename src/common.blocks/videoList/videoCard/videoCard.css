@@ -1,13 +1,28 @@
 .videoCard {
-  border: 1px solid red;
   width: 30%;
   margin: .5rem;
+  margin-bottom: 2rem;
 }
 
 .videoCard__img {
   width: 100%;
 }
+.videoCard__text{
+  display: flex;
+  flex-direction: column;
+}
+.videoCard__text__title{
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: black;
+}
 
-.videoCard__text {
-  
+.videoCard__text__channelName {
+  font-size: 14px;
+  color: black;
+  opacity: .6;
+  text-decoration: none;
 }
